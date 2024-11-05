@@ -1,6 +1,6 @@
 # QuickFi
 
-    A loan management application that allows users to register, login, and apply for loans on a term basis. The platform includes an admin dashboard for loan approval, rejection, and analytics. Users have a personalized dashboard to track loan status, repayment schedule, and loan history.
+A loan management application that allows users to register, login, and apply for loans on a term basis. The platform includes an admin dashboard for loan approval, rejection, and analytics. Users have a personalized dashboard to track loan status, repayment schedule, and loan history.
 
 ## Features
 
@@ -10,37 +10,37 @@
 
 **-Apply for a Loan: _**: Users can apply for loans with customizable terms:
 
-    - Loan terms: 1 week, 2 weeks, 3 weeks, 4 weeks, 8 weeks, or 12 weeks.
+- Loan terms: 1 week, 2 weeks, 3 weeks, 4 weeks, 8 weeks, or 12 weeks.
 
-    - Only one active loan allowed at a time; users must complete repayments before applying for another loan.
+- Only one active loan allowed at a time; users must complete repayments before applying for another loan.
 
 **-Personal Dashboard:_**: 
 
-    - rack active loan status, including principal, interest, repayment term, and outstanding balance.
+- rack active loan status, including principal, interest, repayment term, and outstanding balance.
 
-    - View loan history and repayment records.
+- View loan history and repayment records.
 
-    - Receive notifications on loan approval, rejection, and due dates.
+- Receive notifications on loan approval, rejection, and due dates.
 
 ### Admin Features
 
 **-Admin Dashboard_**:
 
-    - Approve or reject loan applications from users.
+- Approve or reject loan applications from users.
 
-    - View detailed loan analytics, including outstanding balances, total interest earned, user history, and more.
+- View detailed loan analytics, including outstanding balances, total interest earned, user history, and more.
 
-    - Access error logs and monitor the application’s health.
+- Access error logs and monitor the application’s health.
 
 ### Tech Stack
 
-    **-Frontend-**: React, Redux
+**-Frontend-**: React, Redux
 
-    **-Backend-**: Node.js, Express.js, MongoDB
+**-Backend-**: Node.js, Express.js, MongoDB
 
-    **-Authentication-**: JSON Web Token (JWT)
+**-Authentication-**: JSON Web Token (JWT)
 
-    **-Error Handling-**: Comprehensive handling for validation errors, authentication errors, and server errors.
+**-Error Handling-**: Comprehensive handling for validation errors, authentication errors, and server errors.
 
 ## Setup Instructions
 1. Clone the repository
@@ -81,8 +81,8 @@ node server.js
 ```
 7. Access the Application:
 
-  - The frontend is available at http://localhost:3000.
-  - The backend API is accessible at http://localhost:3200.
+- The frontend is available at http://localhost:3000.
+- The backend API is accessible at http://localhost:3200.
 
 
 ## Frontend setup 
