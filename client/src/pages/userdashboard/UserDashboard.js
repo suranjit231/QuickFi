@@ -93,7 +93,7 @@ export default function UserDashboard() {
                             <div className={styles.card}>
                                 <FaPiggyBank className={styles.cardIcon} />
                                 <h3>Total Paid</h3>
-                                <p>${userLoans?.scheduledRepayments.reduce((total, repayment) => total + repayment.paidAmount, 0) || 0}</p>
+                                <p>${userLoans?.scheduledRepayments?.reduce((total, repayment) => total + repayment.paidAmount, 0) || 0}</p>
                             </div>
                             <div className={styles.card}>
                                 <FaCalculator className={styles.cardIcon} />
