@@ -26,7 +26,7 @@ export const signupApiAsync = createAsyncThunk("auth/signupApi",
 
             console.log("req data: ", data)
             
-
+            console.log("signup req.url: ", `${process.env.REACT_APP_SERVER_URL}/api/users/signup`);
             const res = await axios.post(`${process.env.REACT_APP_SERVER_URL}/api/users/signup`, data, {
                 withCredentials:true
             });
@@ -50,6 +50,7 @@ export const loginApiAsync = createAsyncThunk("auth/loginApi",
     async(data, thunkApi)=>{
         try{
 
+             console.log("signin req.url: ", `${process.env.REACT_APP_SERVER_URL}/api/users/login`);
             const res = await axios.post(`${process.env.REACT_APP_SERVER_URL}/api/users/login`,
                 data, {withCredentials:true})
 
