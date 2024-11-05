@@ -41,6 +41,7 @@ export default function ApplyLoansForm() {
     e.preventDefault();
 
     if (amount && term) {
+      console.log(`amount: ${amount} - loanTermWeeks ${loanTermWeeks}`)
       const result = await dispatch(applyLoanApiAsync({ amount:amount, loanTermWeeks:term}))
 
       if(result.type === "userLoan/applyLoanApi/fulfilled"){
