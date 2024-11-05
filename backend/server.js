@@ -26,7 +26,7 @@ app.use(cookieParser());
 
 //====== setup cors =======//
 const corsOptions = {
-    origin: 'quick-ok4gvsquw-suranjit-namasudras-projects.vercel.app', 
+    origin: 'https://quick-6ymm4mlkw-suranjit-namasudras-projects.vercel.app', 
     credentials: true,
   };
 
