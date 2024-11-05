@@ -115,6 +115,8 @@ export default class AdminRepository{
                 // Additional metrics can be added as needed
             };
 
+               console.log(`report: ${report}`)
+
             return { success: true, data: report };
         } catch (error) {
 
