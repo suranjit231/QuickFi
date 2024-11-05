@@ -94,7 +94,7 @@ export default class UserController{
     async logout(req, res, next){
         try {
            
-            res.clearCookie('jwtToken').status(200).send({message:"User logout sucessfully!"});
+            res.clearCookie('jwtToken', { httpOnly: true, secure: true, sameSite: 'None' }).status(200).send({message:"User logout sucessfully!"});
         } catch (error) {
             console.log("error logout: ", error);
             next(error);
