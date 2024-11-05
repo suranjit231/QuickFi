@@ -232,7 +232,7 @@ export default class LoanRepository {
 
             if (activeLoan) throw new AppError("Active loan found. Complete repayment before applying again.", 400);
 
-            const loanDetails = this.calculateLoanDetails(amount, loanTermWeeks, interestRate);
+            const loanDetails = this.calculateLoanDetails(amount, loanTermWeeks, 0.02);
 
             const newLoan = new loanModel({
                 userId,
@@ -240,8 +240,8 @@ export default class LoanRepository {
                 loanTermWeeks:Number(loanTermWeeks),
                 interestRate:0.02,
                 status: "PENDING",
-                totalAmountWithInterest: loanDetails.totalAmountWithInterest,
-                amountPerTerm: loanDetails.amountPerTerm,
+                totalAmountWithInterest:Number(loanDetails.totalAmountWithInterest),
+                amountPerTerm: Number(loanDetails.amountPerTerm),
             });
 
             const savedLoan = await newLoan.save();
