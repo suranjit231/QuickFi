@@ -26,7 +26,7 @@ app.use(cookieParser());
 
 //====== setup cors =======//
 const corsOptions = {
-    origin: 'http://localhost:3000', 
+    origin: 'https://quick-eggo3d4aa-suranjit-namasudras-projects.vercel.app', 
     credentials: true,
   };
 
