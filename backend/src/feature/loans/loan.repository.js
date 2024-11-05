@@ -221,6 +221,7 @@ import { AppError } from "../../middleware/errorHandler.middleware.js";
 export default class LoanRepository {
     async applyLoan(userId, amount, loanTermWeeks, interestRate = 0.02) {
         try {
+            console.log(`amount: ${amount} - loanTermWeeks ${loanTermWeeks}`)
             const user = await userModel.findById(userId);
             if (!user) throw new AppError("User not found. Please sign in.", 404);
 
@@ -295,6 +296,7 @@ export default class LoanRepository {
             if (!loan) throw new AppError("No loan found for this user.", 404);
 
             const remainingTerms = loan.loanTermWeeks - loan.scheduledRepayments.length;
+                     console.log(`loan: ${loan} -`)
 
 
            // const div = loan.scheduledRepayments.length === 0 ? 1 : loan.scheduledRepayments.length;
