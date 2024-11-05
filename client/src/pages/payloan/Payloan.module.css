@@ -1,0 +1,120 @@
+/* Payloan.module.css */
+.payLoansOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    min-height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3000;
+    backdrop-filter: blur(8px);
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+.payLoansContainer {
+    background: #fff;
+    width: 80%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: slideUp 0.5s ease-in-out;
+}
+
+.cardList {
+    margin-top: 20px;
+}
+
+.paymentCard {
+    background: #f7f7f9;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.paymentCard:hover {
+    transform: scale(1.05);
+}
+
+.cardHeader {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.cardIcon {
+    font-size: 36px;
+    color: #004733;
+}
+
+.cardDetails {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.amount {
+    font-size: 18px;
+    color: #333;
+}
+
+.dueDate {
+    font-size: 16px;
+    color: #666;
+}
+
+.calendarIcon {
+    margin-right: 5px;
+}
+
+.payNowButton {
+    margin-top: 20px;
+    background: #008060;
+    color: #fff;
+    border: none;
+    padding: 10px 24px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.payNowButton:hover {
+    background-color: #006b4e;
+}
+
+.closeButton {
+    background: none;
+    border: none;
+    font-size: 16px;
+    color: #008060;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+
+
+

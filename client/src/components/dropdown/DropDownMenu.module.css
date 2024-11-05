@@ -1,0 +1,80 @@
+.dropdownContainer {
+    position: absolute;
+    top: 108%;  
+    left: 0;
+    background-color: #f9f9f9; 
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); 
+    z-index: 1000;
+    min-width: 250px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px; /* Space between items */
+    transition: all 0.3s ease-in-out;
+    z-index: 2000;
+}
+
+.menuItem {
+    padding: 10px 14px;
+    font-size: 16px;
+    color: #333;
+    background-color: transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    
+}
+
+.menuItem:hover {
+    background-color: rgba(197, 192, 192, 0.555); 
+    color: #000000d3; 
+}
+
+/* Optional: To make the text bolder on hover */
+.menuItem:hover span {
+    font-weight: 600;
+}
+
+.menuItem:active{
+    transform: scale(0.85);
+}
+
+.rightArrow {
+    opacity: 0; /* Hidden by default */
+    font-size: 14px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.menuItem:hover .rightArrow {
+    opacity: 1; /* Show on hover */
+}
+
+.callActiveMenu{
+    display: flex;
+    position: absolute;
+    top: 108%;
+    right: 0;
+    padding: 15px;
+    background-color: #f9f9f9;
+    color: #333;
+    align-items: center;
+    width: 280px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 5px;
+    justify-content: center;
+    transition: 0.4s ease-in-out;
+}
+
+.callActiveMenu:hover{
+    color: #096424;
+}
+
+.callActiveMenu:active{
+    transform: scale(0.85);
+}

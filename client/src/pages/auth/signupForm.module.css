@@ -1,0 +1,93 @@
+.signupFormContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh); /* Adjusting for navbar height */
+    /* background-color: #f9f9f9; */
+    padding-top: 100px;
+  }
+  
+  .signupForm {
+    width: 100%;
+    max-width: 450px;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    animation: slideIn 0.5s ease-in-out;
+  }
+  
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .formHeader {
+    font-size: 1.5rem;
+    color: rgb(0, 71, 51);
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  .formGroup {
+    margin-bottom: 1.25rem;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 8px;
+  }
+  
+  .formGroup input {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+    font-size: 1rem;
+    margin-left: 0.5rem;
+  }
+  
+  .formGroup svg {
+    color: rgb(0, 71, 51);
+    font-size: 1.2rem;
+  }
+  
+  .submitButton {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    background-color: rgb(0, 71, 51);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .submitButton:hover {
+    background-color: rgb(0, 51, 41);
+  }
+  
+  .formLinks {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    color: rgb(0, 71, 51);
+    margin-top: 1rem;
+  }
+  
+  .formLinks a {
+    text-decoration: none;
+    color: rgb(0, 71, 51);
+    transition: color 0.3s;
+  }
+  
+  .formLinks a:hover {
+    color: rgb(0, 51, 41);
+  }
+  

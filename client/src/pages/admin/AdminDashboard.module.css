@@ -1,0 +1,200 @@
+/* .dashboardContainer {
+    background-color: #f8f9fa;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 100px;
+  }
+  
+  .cardsWrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    width: 100%;
+  }
+  
+  .card {
+    background-color: #004733;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cardTitle {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  .cardValue {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .analysisGraphContainer {
+    display: flex;
+    gap: 20px;
+    margin-top: 40px;
+    width: 100%;
+  }
+  
+  .lineGraphBox, .barGraphBox {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  
+
+.progressContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    position: relative;
+  }
+  
+  .progressCircle {
+    stroke: #00a99d;
+    stroke-width: 8;
+    fill: none;
+    transition: stroke-dashoffset 0.6s ease;
+  }
+  
+  .text {
+    font-size: 18px;
+    font-weight: bold;
+    fill: #333; 
+    color: #333;
+  }
+  
+  
+  @media screen and (max-width: 768px) {
+    .cardsWrapper {
+      grid-template-columns: 1fr;
+    }
+    .analysisGraphContainer {
+      flex-direction: column;
+    }
+  }
+   */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   .dashboardContainer {
+    background-color: #f8f9fa;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 100px;
+}
+
+.cardsWrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    width: 100%;
+}
+
+.card {
+    min-height: 150px;
+    background-color: #004733;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    /* text-align: center; */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative; /* For positioning progress bar */
+}
+
+.cardTitle {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.cardValue {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0; /* Added margin for spacing */
+}
+
+.analysisGraphContainer {
+    display: flex;
+    gap: 20px;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.lineGraphBox, .barGraphBox {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+
+
+
+
+.progressContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.progressCircle {
+    stroke-width: 8;
+    fill: none;
+    transition: stroke-dashoffset 0.6s ease;
+}
+
+.text {
+    font-size: 18px;
+    font-weight: bold;
+    fill: #0ef; 
+    color: #333;
+}
+
+
+@media screen and (max-width: 768px) {
+    .cardsWrapper {
+        grid-template-columns: 1fr;
+    }
+    .analysisGraphContainer {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,109 @@
+.loanListContainer {
+    margin-top: 40px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.loanListTitle {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #004733; /* Adjust color as needed */
+}
+
+.tableWrapper {
+    overflow-x: auto; /* Allow horizontal scrolling on small screens */
+}
+
+.loanTable {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px; /* Minimum width to prevent column stacking */
+}
+
+.loanTable th, .loanTable td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.loanTable th {
+    background-color: #004733; /* Header background color */
+    color: white;
+}
+
+.approveButton {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.rejectButton {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.approveButton:hover, .rejectButton:hover {
+    opacity: 0.9; /* Slight hover effect */
+}
+
+
+.cardContainer{
+    display: none;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .loanTable {
+        display: none; /* Hide the table on small screens */
+    }
+
+    .cardContainer{
+        display: flex;
+    }
+    
+
+    .applicationCard {
+        min-width: 180px;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #ddd;
+        padding: 12px;
+        border-radius: 8px;
+        margin: 10px 0;
+        flex: 1;
+    }
+
+    .actionBtnDiv{
+        margin-top: 10px;
+    }
+
+    .applicationCard h2 {
+        margin: 0;
+        font-size: 18px;
+    }
+
+    .applicationCard div {
+        margin-bottom: 5px;
+    }
+
+    .loanListTitle {
+        font-size: 20px; /* Adjust title font size for smaller screens */
+    }
+
+    .approveButton, .rejectButton {
+        padding: 6px 10px; /* Adjust button size for smaller screens */
+    }
+}

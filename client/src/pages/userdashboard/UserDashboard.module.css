@@ -1,0 +1,187 @@
+.dashboardContainer {
+    width: 100%;
+    display: flex;
+    padding: 100px 20px 50px 20px;
+    min-height: 100vh;
+    color: #00210c;
+}
+
+.sidebar {
+    width: 250px;
+    padding: 20px;
+    /* background-color: #00210c;
+    color: #f0f0ff; */
+    position: fixed;
+    top: 90px;
+    height: calc(100vh - 80px);
+    /* box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); */
+    right: 0;
+    background-color: #fff;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    color: #00210c;
+}
+
+.sidebar h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.sidebarLink {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #f0f0ff;
+    padding: 12px;
+    font-size: 18px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+    color: #00210c;
+}
+
+.sidebarLink:hover {
+    background-color: #008060;
+    color: #ffffff;
+}
+
+.mainContent {
+    width: 100%;
+    margin-right: 270px;
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+.summaryCards {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+    min-width: 150px;
+}
+
+.cardIcon {
+    font-size: 32px;
+    color: #004733;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    font-size: 20px;
+    color: #004733;
+    margin-bottom: 8px;
+}
+
+ .repaymentSchedule{
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.loanInfo h2, .repaymentSchedule h2, .recentActivity h2 {
+    font-size: 24px;
+    color: #004733;
+    margin-bottom: 15px;
+}
+
+.repaymentSchedule ul, .recentActivity ul {
+    list-style: none;
+    padding: 0;
+}
+
+.repaymentItem {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #f0f0ff;
+    font-size: 18px;
+}
+
+.paid {
+    color: #004733;
+    font-weight: bold;
+}
+
+.payLoanButton {
+    background-color: #004733;
+    color: #ffffff;
+    padding: 12px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: background-color 0.3s;
+}
+
+.payLoanButton:hover {
+    background-color: #006b4e;
+}
+
+
+.mainContentRow {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; 
+
+}
+
+.loanInfo, .recentActivity {
+    flex: 1; 
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-in-out;
+    min-width: 280px; /* Minimum width for each section */
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .sidebar{
+        top: 80px;
+        transform: translateX(100%);
+        transition: 0.4s ease-in-out;
+    }
+
+    .sidebar.showSideBar{
+        transform: translateX(0);
+        transition: 0.4s ease-in-out;
+
+    }
+
+    .mainContent{
+        margin-right: 0;
+    }
+    
+}

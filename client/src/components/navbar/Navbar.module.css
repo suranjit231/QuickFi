@@ -1,0 +1,252 @@
+/* Existing navbar styles */
+.navbarContainer {
+    width: 100%;
+    padding: 1.25rem;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    background-color: rgb(0 71 51);
+    z-index: 2000;
+    position: fixed;
+    margin-bottom: 150px;
+}
+
+/* Sticky class to apply when the navbar becomes sticky */
+.sticky {
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    
+}
+
+
+.leftNavbar{
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    width: 50%;
+    justify-content: space-between;
+    
+    
+}
+
+.navLogo{
+    font-size: 30px;
+    color: #f0f0ff;
+    font-style: oblique;
+}
+
+.navLogo a{
+    text-decoration: none;
+    color: #f0f0ff;
+}
+
+.navLink{
+    font-size: 18px;
+    padding: 12px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+    color: aliceblue;
+    font-weight: 500;
+   
+}
+
+.navLink{
+    position: relative;
+}
+
+.navLink:hover{
+    background-color: aliceblue;
+    color: rgba(0, 0, 0, 0.781);
+}
+
+.rightNavbar{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-right: 30px;
+}
+
+.contactLink{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #c0c0c0;
+    margin-right: 15px;
+    color: #f0f0ff;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+    position: relative;
+}
+
+.contactLink:hover{
+    background-color: #f0f0ff;
+    color: rgba(0, 0, 0, 0.781);
+}
+
+.menuIcon{
+    display: none;
+}
+
+
+.signinLink a{
+    text-decoration: none;
+    font-size: 18px;
+    padding: 12px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+    color: aliceblue;
+    font-weight: 500;
+}
+
+.signinLink a:hover{
+    background-color: aliceblue;
+    color: rgba(0, 0, 0, 0.781);
+}
+
+
+.userIconsContainer, .adminIconsContainer{
+    width: 50px;
+    height: 50px;
+    border: 1px solid #f0f0ff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+    
+}
+
+.userIconsContainer a{
+    color: #f0f0ff;
+    font-size: 20px;
+    transition: 0.4s ease-in-out;
+
+}
+
+.userIconsContainer a:hover{
+    color: #333;
+}
+
+.adminIconsContainer{
+    color: #f0f0ff;
+    font-size: 16px;
+    position: relative;
+}
+
+.adminIconsContainer:hover{
+    background-color: #c0c0c0;
+    color: #333;
+}
+
+.userIconsContainer:hover {
+    background-color: #fff;
+}
+
+.logoutDropDown{
+    position: absolute;
+    width: auto;
+    background-color: #fff;
+    color: #333;
+    height: auto;
+    top: 60px;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 5px;
+    width: 200px;
+    padding: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s ease-in-out;
+}
+
+.logoutDropDown.showLogoutOptions{
+    opacity: 1;
+    visibility: visible;
+}
+
+.logoutDropDown p{
+    /* background-color: #ccc; */
+    /* padding: 10px 40px 10px 10px; */
+    transition: 0.4s ease-in-out;
+    color: #181717;
+    font-size: 20px;
+    font-weight: 600;
+    padding-left: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    
+   
+}
+
+.logoutDropDown p:hover{
+    background-color: #6e6c6cc4;
+    color: #fff;
+}
+
+.logoutDropDown p:active{
+    transform: scale(0.85);
+}
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+
+    .contactLink{
+        width: 40px;
+        height: 40px;
+    }
+
+    .userIconsContainer{
+        width: 40px;
+        height: 40px;
+
+    }
+
+
+    .navLink{
+        display: none;
+    }
+
+    .menuIcon{
+        display: block;
+        font-size: 25px;
+        color: #f0f0ff;
+        cursor: pointer;
+        transition: 0.4s ease-in-out;
+    }
+
+    .menuIcon:hover{
+        color: #333;
+    }
+
+
+    .menuIcon:active{
+        transform: scale(1.2);
+    }
+
+    /* .signinLink{
+        display: none;
+    } */
+    
+}
+
+
+@media screen and (max-width: 520px) {
+    
+    
+}
