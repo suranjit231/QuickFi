@@ -42,7 +42,8 @@ export default class UserController{
                     role:result.user.role,
                    }, process.env.JWT_SECRET, { expiresIn: '5h' });
 
-                return res.status(200).cookie("jwtToken", token, { maxAge: 5 * 60 * 60 * 1000, httpOnly: true })
+                return res.status(200).cookie("jwtToken", token, { maxAge: 5 * 60 * 60 * 1000, httpOnly: true, secure:true, 
+        sameSite: 'None'})
                 .json({success:true, user:result.user, token});
  
             }
