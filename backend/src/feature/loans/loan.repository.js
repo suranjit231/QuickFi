@@ -236,9 +236,9 @@ export default class LoanRepository {
 
             const newLoan = new loanModel({
                 userId,
-                amountRequested: amount,
-                loanTermWeeks,
-                interestRate,
+                amountRequested: Number(amount),
+                Number(loanTermWeeks),
+                interestRate:0.02,
                 status: "PENDING",
                 totalAmountWithInterest: loanDetails.totalAmountWithInterest,
                 amountPerTerm: loanDetails.amountPerTerm,
