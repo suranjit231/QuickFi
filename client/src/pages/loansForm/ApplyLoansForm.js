@@ -49,7 +49,7 @@ export default function ApplyLoansForm() {
           setAmount("");
           setTerm("");
           setShowModal(false);
-          navigate(`/user/dashboard/${user._id}`);
+          //navigate(`/user/dashboard/${user._id}`);
       }
 
     } else {
