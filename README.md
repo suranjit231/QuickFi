@@ -2,6 +2,14 @@
 
 A loan management application that allows users to register, login, and apply for loans on a term basis. The platform includes an admin dashboard for loan approval, rejection, and analytics. Users have a personalized dashboard to track loan status, repayment schedule, and loan history.
 
+## Admin credentail for testing admin:
+```
+{
+    "email":"ganesh123@gmail.com",
+    "password":"Ganesgh@123",
+    "contact":"9878552551",
+}
+``
 ## Features
 
 ### Users feature
