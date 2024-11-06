@@ -9,7 +9,9 @@ A loan management application that allows users to register, login, and apply fo
     "password":"Ganesgh@123",
     "contact":"9878552551",
 }
-``
+```
+
+
 ## Features
 
 ### Users feature
